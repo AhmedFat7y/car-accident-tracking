@@ -1,0 +1,8 @@
+{% extends "master.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+  {% include "map_template.html" with vehiclesData=allVehiclesData %}
+{% endblock %}
+

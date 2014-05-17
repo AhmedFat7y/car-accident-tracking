@@ -1,0 +1,8 @@
+body {
+  padding-top: 50px;
+}
+#map-canvas {
+  height: 500px;
+  margin: 40px 15px;
+  text-align: center;
+}
