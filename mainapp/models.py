@@ -16,7 +16,7 @@ class SensorsData(models.Model):
   speed = models.DecimalField(max_digits=20, decimal_places=10)
   temperature = models.DecimalField(max_digits=20, decimal_places=10)
   status = models.IntegerField(choices=STATUS_CHOICES, default=NORMAL)
-  timestamp = models.DateField(auto_now_add=True)
+  timestamp = models.DateTimeField(auto_now_add=True)
   vehicle = models.ForeignKey(Vehicle)
 
   def __unicode__(self):
