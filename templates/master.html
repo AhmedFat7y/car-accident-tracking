@@ -41,7 +41,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="{% url 'mainapp.views.index' %}">Home</a></li>
             {% if user.is_authenticated %}
-            <li><a href="#allcars">All Cars</a></li>
+            <li><a href="{%url 'mainapp.views.all_cars' %}">All Cars</a></li>
             <li><a href="logout/">Sign out</a></li>
             {% else %}
             <li><a href="openid/login/">Sign in</a></li>
